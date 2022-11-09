@@ -16,7 +16,7 @@ router.post("/", async function (req, res, next) {
   try {
     res.json(await programinglanguages.create(req.body));
   } catch (err) {
-    console.error("Errorwhile creating programming language", err.message);
+    console.error("Error while creating programming language", err.message);
     next(err);
   }
 });
